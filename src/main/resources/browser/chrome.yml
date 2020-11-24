@@ -1,0 +1,9 @@
+options:
+  - "--start-maximized"
+  - "--no-sandbox"
+  - "--disable-gpu"
+  - "--incognito"
+  - "--disable-popup-blocking"
+  - "--disable-extensions"
+  - "--disable-infobars"
+  - "--ignore-certificate-errors"
