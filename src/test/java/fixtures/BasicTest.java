@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import wordpress.PageClient;
 
 
-@SingleSession
 @ExtendWith(SeleniumJupiter.class)
 public class BasicTest {
 
