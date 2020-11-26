@@ -4,6 +4,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import common.ApplicationManager;
 import wordpress.PageObject;
 
 
@@ -13,6 +14,13 @@ public class PageAuthorization extends PageObject {
     }
 
     // ACTION
+    @Step("Авторизация.")
+    public void actionSignIn()
+    {
+        insertLogin(ApplicationManager.config.login);
+        insertPassword(ApplicationManager.config.password);
+        clickLogin();
+    }
 
     @Step("Авторизация.")
     public void actionSignIn(String email, String password) {

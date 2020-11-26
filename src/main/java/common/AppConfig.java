@@ -1,4 +1,4 @@
-package wordpress.models;
+package common;
 
 public class AppConfig {
     public String url;
