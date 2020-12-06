@@ -25,4 +25,15 @@ public class BarHeader extends PageObject {
     public void actionLogOut() {
 
     }
+
+    @Step("Создание нового поста")
+    public void actionNewPost(){
+        clickAdd();
+//        clickAddNewPost();
+    }
+
+    @Step("Нажатие кнопки 'Добавить'")
+    public void clickAdd(){
+        waitElement(BarHeaderLocators.add).click();
+    }
 }
